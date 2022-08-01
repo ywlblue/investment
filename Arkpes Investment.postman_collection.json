@@ -1,0 +1,993 @@
+{
+	"info": {
+		"_postman_id": "9f00e96b-8e26-452d-8fa9-d710122841d5",
+		"name": "Arkpes Investment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Client By Client ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/client/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Client By Client ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:02:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"hello client 1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete A Client By Client ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/client/2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete A Client By Client ID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:00:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "Update a Client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"hello client 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/client/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update a Client",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"hello client 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:01:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"hello client 1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"client 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/client",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a Client",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"client 4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:03:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"client 3\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Investors By Client ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/client/1/investor",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"1",
+						"investor"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Investors By Client ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/1/investor",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"investor"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:05:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"investor 1\",\n        \"client\": {\n            \"id\": 1,\n            \"name\": \"hello client 1\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"investor 2\",\n        \"client\": {\n            \"id\": 1,\n            \"name\": \"hello client 1\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Investor By Client ID and Investor ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/client/1/investor/2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"1",
+						"investor",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Investor By Client ID and Investor ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/1/investor/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"investor",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:06:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"investor 2\",\n    \"client\": {\n        \"id\": 1,\n        \"name\": \"hello client 1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create An Investor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Create An Investor",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"new investor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client/1/investor",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"investor"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:08:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"name\": \"new investor\",\n    \"client\": {\n        \"id\": 1,\n        \"name\": \"hello client 1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update An Investor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Update An Investor",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"updated investor 1 name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client/1/investor/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"investor",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Jul 2022 23:09:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"updated investor 1 name\",\n    \"client\": {\n        \"id\": 1,\n        \"name\": \"hello client 1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete An Investor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Delete An Investor",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/1/investor/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"investor",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Aug 2022 00:32:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "Update an Investor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Update an Investor",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated investor 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client/1/investor/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"investor",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Aug 2022 02:11:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Updated investor 2\",\n    \"client\": {\n        \"id\": 1,\n        \"name\": \"client 1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Funds by Client Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get Funds by Client Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/1/fund",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"fund"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Aug 2022 02:11:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"amount\": 2000000,\n        \"digit\": 2,\n        \"clientId\": 1,\n        \"investors\": [\n            {\n                \"id\": 1,\n                \"name\": \"investor 1\",\n                \"client\": {\n                    \"id\": 1,\n                    \"name\": \"client 1\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"amount\": 3000000,\n        \"digit\": 2,\n        \"clientId\": 1,\n        \"investors\": [\n            {\n                \"id\": 1,\n                \"name\": \"investor 1\",\n                \"client\": {\n                    \"id\": 1,\n                    \"name\": \"client 1\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Updated investor 2\",\n                \"client\": {\n                    \"id\": 1,\n                    \"name\": \"client 1\"\n                }\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create a Fund",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 2994872,\n    \"digit\": 2,\n    \"clientId\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/client/2/fund",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"2",
+						"fund"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a Fund",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 2994872,\n    \"digit\": 2,\n    \"clientId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client/2/fund",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"2",
+								"fund"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Aug 2022 02:19:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"amount\": 2994872,\n    \"digit\": 2,\n    \"clientId\": 2,\n    \"investors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Update a Fund",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"investors\": [\n        {\n            \"id\": 3,\n            \"name\": \"investor3\",\n            \"client\": {\n                \"id\": 2,\n                \"name\": \"client 2\"\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/client/2/fund/5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"2",
+						"fund",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update a Fund",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"investors\": [\n        {\n            \"id\": 3,\n            \"name\": \"investor3\",\n            \"client\": {\n                \"id\": 2,\n                \"name\": \"client 2\"\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/client/2/fund/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"2",
+								"fund",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Aug 2022 02:22:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"amount\": 2994872,\n    \"digit\": 2,\n    \"clientId\": 2,\n    \"investors\": [\n        {\n            \"id\": 3,\n            \"name\": \"investor 3\",\n            \"client\": {\n                \"id\": 2,\n                \"name\": \"client 2\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete a Fund",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/client/1/fund/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"client",
+						"1",
+						"fund",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete a Fund",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/1/fund/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"fund",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Aug 2022 02:24:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080/arkpes",
+			"type": "string"
+		}
+	]
+}
